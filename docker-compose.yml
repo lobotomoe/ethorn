@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+  backend:
+    env_file:
+      - .env.back
+    image: msurf/ethornbackend
+    depends_on:
+      - db
+    ports:
+      - 8080:8080
+      - 1337:1337
+  client:
+    env_file:
+      - .env.front
+    image: msurf/ethornclient
+    depends_on:
+      - backend
+    ports:
+      - 80:80
+
