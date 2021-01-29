@@ -1,5 +1,10 @@
 ## Orion Protocol — Intro
 
+## Features
+- You can add ETH or ORN address
+- For added addresses tracks balance and usdt/eur exchange rate
+- Charts
+
 ## Running
 - Copy `.env.front.example` to `.env.front`
 - Copy `.env.back.example`  and `.env.back`
