@@ -7,7 +7,7 @@
 
 ## Running
 - Copy `.env.front.example` to `.env.front`
-- Copy `.env.back.example`  and `.env.back`
+- Copy `.env.back.example`  to `.env.back`
 - In `.env.back` you **MUST** specify WEB3_HTTP_PROVIDER_API param at least. Current app developed with Ropsten Infura API where API looks like https://ropsten.infura.io/v3/YOUR_TOKEN
 - Run `docker-compose up -d`
 - Wait for containers running
